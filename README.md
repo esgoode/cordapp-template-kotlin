@@ -1,14 +1,11 @@
-<p align="center">
-  <img src="https://www.corda.net/wp-content/uploads/2016/11/fg005_corda_b.png" alt="Corda" width="500">
-</p>
 
-# CorDapp Template - Kotlin
 
-Welcome to the Kotlin CorDapp template. The CorDapp template is a stubbed-out CorDapp that you can use to bootstrap 
-your own CorDapps.
+# CorDapp  - Kotlin
 
-**This is the Kotlin version of the CorDapp template. The Java equivalent is 
-[here](https://github.com/corda/cordapp-template-java/).**
+Kotlin Cordapp for cash issuance and underwritten lending. This is a cordapp application where party A acts as a central bank that can issue a currency and lend out a currency at a defined rate. 
+
+**This has been forked from the Kotlin cordapp template
+[here](https://github.com/corda/cordapp-template-kotlin/).**
 
 # Pre-Requisites
 

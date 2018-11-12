@@ -13,7 +13,7 @@ import net.corda.core.transactions.TransactionBuilder
 // *********
 @InitiatingFlow
 @StartableByRPC
-class IOUFlow(val iouValue: Int,
+class MintFlow(val cashValue: Int,
               val otherParty: Party) : FlowLogic<Unit>() {
 
     /** The progress tracker provides checkpoints indicating the progress of the flow to observers. */
@@ -26,7 +26,7 @@ class IOUFlow(val iouValue: Int,
         val notary = serviceHub.networkMapCache.notaryIdentities[0]
 
         // We create the transaction components.
-        val outputState = IOUState(iouValue, ourIdentity, otherParty)
+        val outputState = MintState(cashValue, ourIdentity, otherParty)
         val cmd = Command(TemplateContract.Commands.Action(), ourIdentity.owningKey)
 
         // We create a transaction builder and add the components.
